@@ -1,0 +1,44 @@
+<form (ngSubmit)="onSubmit()" [formGroup]="formTarefa" #form="ngForm">
+  <h1> Nova Tarefa</h1>
+  <mat-form-field appearance="standard">
+    <mat-label>Titulo da tarefa</mat-label>
+    <input matInput formControlName="titulo">
+  </mat-form-field>
+
+  <div class="data">
+    <mat-form-field appearance="standard" class="example-form-field">
+      <mat-label>Data</mat-label>
+      <input matInput [matDatepicker]="datepicker" formControlName="dia">
+      <mat-datepicker-toggle matSuffix [for]="datepicker"></mat-datepicker-toggle>
+      <mat-datepicker #datepicker>
+        <mat-datepicker-actions>
+          <button mat-button matDatepickerCancel>Cancelar</button>
+          <button mat-raised-button color="primary" matDatepickerApply>Confirmar</button>
+        </mat-datepicker-actions>
+      </mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field appearance="standard">
+      <mat-label>Hora (*Opcional)</mat-label>
+      <input matInput formControlName="hora">
+    </mat-form-field>
+  </div>
+
+  <div class="radio">
+    <mat-radio-group aria-label="Marcar como importante" formControlName="importante">
+      <mat-label>Marcar como Importante:</mat-label>
+      <mat-radio-button value="1">Sim</mat-radio-button>
+      <mat-radio-button checked value="2">Não</mat-radio-button>
+    </mat-radio-group>
+  </div>
+
+  <mat-form-field class="descricao" appearance="outline">
+    <mat-label>Descrição (*Opcional)</mat-label>
+    <input matInput formControlName="descricao">
+  </mat-form-field>
+
+  <button [disabled]="formTarefa.invalid" mat-raised-button color="primary">Salvar</button>
+  <button mat-raised-button color="warn">Cancelar</button>
+
+
+</form>

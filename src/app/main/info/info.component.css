@@ -1,0 +1,21 @@
+.info {
+  width: 400px;
+}
+.descricao {
+  max-width: 95%;
+}
+
+span {
+  display: block;
+}
+
+h3 {
+  margin-top: 10px;
+}
+
+
+@media(max-width:767px) {
+  .info {
+    max-width: 95%;
+  }
+}

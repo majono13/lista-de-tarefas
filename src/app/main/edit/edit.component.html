@@ -1,0 +1,33 @@
+<form [formGroup]="formEditTarefa" (ngSubmit)="onSubmit()">
+
+  <mat-form-field appearance="standard">
+    <mat-label>Titulo da tarefa</mat-label>
+    <input matInput formControlName="titulo">
+  </mat-form-field>
+
+  <div class="data">
+    <mat-form-field appearance="standard" >
+      <mat-label>Dia</mat-label>
+      <input matInput formControlName="dia">
+    </mat-form-field>
+
+    <mat-form-field appearance="standard">
+      <mat-label>Hora</mat-label>
+      <input matInput formControlName="hora">
+    </mat-form-field>
+  </div>
+
+  <mat-radio-group aria-label="Marcar como importante" formControlName="importante">
+    <mat-label>Marcar como Importante:</mat-label>
+    <mat-radio-button value="1">Sim</mat-radio-button>
+    <mat-radio-button   value="2">Não</mat-radio-button>
+  </mat-radio-group>
+
+  <mat-form-field class="descricao"d appearance="outline">
+    <mat-label>Descrição</mat-label>
+    <input matInput formControlName="descricao">
+  </mat-form-field>
+
+  <button [disabled]="formEditTarefa.invalid" mat-raised-button color="primary">Salvar</button>
+  <button (click)="cancelar()" mat-raised-button color="warn">Cancelar</button>
+</form>

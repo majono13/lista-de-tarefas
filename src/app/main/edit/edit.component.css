@@ -1,0 +1,25 @@
+mat-form-field {
+  width: 90%;
+}
+
+.data mat-form-field {
+  margin-right: 5px;
+  width: 45%;
+}
+
+
+mat-radio-group mat-label, mat-radio-button {
+  margin-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+button {
+  margin-right: 10px;
+}
+
+.descricao input {
+  height: 40px;
+}
+
+

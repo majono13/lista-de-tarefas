@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Satisfy&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-text);
+}
+:root {
+  --cor1: #3F5573;
+  --cor2: #CEDEF2;
+  --cor3: #5A6B8C;
+  --cor4: #7790A6;
+
+  --font-title: 'Satisfy', cursive;
+  --font-text: 'Montserrat', sans-serif;
+}
+
+

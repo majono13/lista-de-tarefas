@@ -1,0 +1,109 @@
+
+<div class="content">
+
+  <div class="button-add">
+
+    <button routerLink="/nova-tarefa" title="Adicionar tarfa" mat-fab color="primary" aria-label="Example icon button with a home icon">
+      <mat-icon>add</mat-icon>
+    </button>
+
+  </div>
+
+  <mat-tab-group>
+    <!------- Todas as terefas -------->
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <span>Todas as tarefas <i class="bi bi-journal"></i></span>
+      </ng-template>
+
+        <mat-list>
+        <mat-list-item *ngFor="let tarefa of tarefas">
+          <section>
+            <div class="info">
+              <div>
+                <p>
+                  <i (click)="alteraStatus(tarefa)" title="Marcar como pendente" *ngIf="tarefa.status" class="bi icone-status bi-check-circle-fill"></i>
+                  <i (click)="alteraStatus(tarefa)" title="Marcar como concluida" *ngIf="!tarefa.status" class="bi bi icone-status  bi-check-circle"></i>
+                  {{tarefa.titulo}} - {{tarefa.dia}} </p>
+              </div>
+              <div class="etiqueta" *ngIf="tarefa.importante">
+                <span>Importante</span>
+              </div>
+            </div>
+            <section class="acoes" >
+              <div><i title="Informações" (click)="openDialog(tarefa)" class="bi bi-info-circle"></i></div>
+              <div><i title="Editar" (click)="openDialogEdit(tarefa)" class="bi bi-pencil"></i></div>
+              <div><i title="Apagar" (click)="apagar(tarefa.id)" class="bi bi-trash3"></i></div>
+            </section>
+            <mat-divider></mat-divider>
+          </section>
+        </mat-list-item>
+      </mat-list>
+    </mat-tab>
+
+    <!------- Concluídas -------->
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <span>Concluídas <i class="bi bi-check2"></i></span>
+      </ng-template>
+
+      <mat-list>
+
+        <mat-list-item *ngFor="let tarefa of tarefas">
+
+            <section *ngIf="tarefa.status">
+              <div class="info">
+                <div>
+                  <p>
+                    <i class="bi bi-check-circle-fill"></i>
+                    {{tarefa.titulo}} - {{tarefa.dia}}
+                   </p>
+                </div>
+              </div>
+              <section class="acoes" >
+                <div><i title="Informações" (click)="openDialog(tarefa)" class="bi bi-info-circle"></i></div>
+                <div><i title="Apagar" (click)="apagar(tarefa.id)" class="bi bi-trash3"></i></div>
+              </section>
+
+              <mat-divider></mat-divider>
+            </section>
+        </mat-list-item>
+      </mat-list>
+
+
+    </mat-tab>
+
+    <!------- Pendentes -------->
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <span >Pendentes <i class="bi bi-hourglass-split"></i></span>
+      </ng-template>
+
+      <mat-list>
+
+        <mat-list-item *ngFor="let tarefa of tarefas">
+          <section *ngIf="!tarefa.status">
+            <div class="info">
+              <div>
+                <p>
+                  <i (click)="alteraStatus(tarefa)" title="Marcar como pendente" *ngIf="tarefa.status" class="bi icone-status bi-check-circle-fill"></i>
+                  <i (click)="alteraStatus(tarefa)" title="Marcar como concluida" *ngIf="!tarefa.status" class="bi bi icone-status  bi-check-circle"></i>
+                  {{tarefa.titulo}} - {{tarefa.dia}} </p>
+              </div>
+              <div class="etiqueta" *ngIf="tarefa.importante">
+                <span>Importante</span>
+              </div>
+            </div>
+            <section class="acoes" >
+              <div><i title="Informações" (click)="openDialog(tarefa)" class="bi bi-info-circle"></i></div>
+              <div><i title="Editar" (click)="openDialogEdit(tarefa)" class="bi bi-pencil"></i></div>
+              <div><i title="Apagar" (click)="apagar(tarefa.id)" class="bi bi-trash3"></i></div>
+            </section>
+            <mat-divider></mat-divider>
+          </section>
+        </mat-list-item>
+      </mat-list>
+    </mat-tab>
+
+  </mat-tab-group>
+</div>

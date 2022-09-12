@@ -1,27 +1,41 @@
-# ListaTarefas
+<h1 align="center">App Lista de tarefas</h1>
+<h3> minhastarefas.com </h3>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
+![Badge em Desenvolvimento](https://img.shields.io/badge/Status-Em%20desenvolvimento-yellow)
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<p>Este é um projeto pessoal, desenvolvildo com Angular v13. O app se trata de um website onde é possível adicionar tarefas. Se trata de um app desenvolvido apenas no front-end por isso não há integração com nenhum banco de dados, e o armazenamento de dados é feito no localstorage.</p>
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<h3>Funcionalidades</h3>
 
-## Build
+1 - Adicionar tarefas: é possível adicionar tarefas com as seguintes informações: 
+    - Título;
+    - Data e hora;
+    - Descrição;
+    - Adicionar ou não uma etiqueta de importante.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+2 - Responsividade: a aplicação é responsiva, podendo ser usada tanto em computadores quanto em celulares e tabletes.
 
-## Running unit tests
+3 - Controle das tarefas: após salvar uma tarefa é possível apagar, editar e vizualizar as informações da tarefa, também é possível marcá-la como concluída ou pendente.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+4 - Ver tarefas por status: é possível vizualizar as tarefas de 3 formas: 
+    - Todas as tarefas;
+    - Tarefas marcadas como concluídas;
+    - Tarefas pendentes.
 
-## Running end-to-end tests
+<h3 align="center">📁 Acesso ao projeto 👇</h3>
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+https://lisra-de-tarefas.web.app/
 
-## Further help
+<h3>✅ Tecnologias Utilizadas</h3>
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+➡️ Angular 13
+
+➡️ Material design
+
+➡️ Typescript
+
+➡️HTML 5
+
+➡️ CSS 3
