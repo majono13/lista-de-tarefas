@@ -10,19 +10,19 @@
 <h3>Funcionalidades</h3>
 
 1 - Adicionar tarefas: é possível adicionar tarefas com as seguintes informações: 
-    - Título;
-    - Data e hora;
-    - Descrição;
-    - Adicionar ou não uma etiqueta de importante.
+   <p> - Título; </p>
+   <p> - Data e hora;</p>
+   <p> - Descrição;</p>
+   <p> - Adicionar ou não uma etiqueta de importante.</p>
 
 2 - Responsividade: a aplicação é responsiva, podendo ser usada tanto em computadores quanto em celulares e tabletes.
 
 3 - Controle das tarefas: após salvar uma tarefa é possível apagar, editar e vizualizar as informações da tarefa, também é possível marcá-la como concluída ou pendente.
 
 4 - Ver tarefas por status: é possível vizualizar as tarefas de 3 formas: 
-    - Todas as tarefas;
-    - Tarefas marcadas como concluídas;
-    - Tarefas pendentes.
+   <p> - Todas as tarefas;</p>
+  <p>  - Tarefas marcadas como concluídas;</p>
+  <p>  - Tarefas pendentes.</p>
 
 <h3 align="center">📁 Acesso ao projeto 👇</h3>
 
