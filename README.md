@@ -1,10 +1,10 @@
 <h1 align="center">App Lista de tarefas</h1>
 <h3> minhastarefas.com </h3>
 
-![Badge em Desenvolvimento](https://img.shields.io/badge/Status-Em%20desenvolvimento-yellow)
+![Badge em Desenvolvimento](https://img.shields.io/badge/Status-Conclu%C3%ADdo-green)
 
 
-<p>Este é um projeto pessoal, desenvolvildo com Angular v13. O app se trata de um website onde é possível adicionar tarefas. Se trata de um app desenvolvido apenas no front-end por isso não há integração com nenhum banco de dados, e o armazenamento de dados é feito no localstorage.</p>
+<p>Este é um projeto pessoal, desenvolvildo com Angular v13. O app se trata de um website onde é possível adicionar tarefas. Se trata de um app desenvolvido apenas no front-end por isso não há integração com nenhum banco de dados, e o armazenamento de dados é feito no localstorage</p>
 
 
 <h3>Funcionalidades</h3>
